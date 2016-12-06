@@ -11,12 +11,12 @@ The latest OSI SAF sea ice concentration and edge products can be downloaded fro
     ftp://osisaf.met.no/prod/ice/edge
 
 Download the sea ice concentration and the corresponding sea ice edge products in NetCDF format.
-For example download -- replacing 20161103 with the desired date (Note that the product files are only
-available for the last 31 days from this location.):
+For example download -- replacing 20161103 with the desired date (note that the product files are only
+available for the last 31 days from this location):
 
     ftp://osisaf.met.no/prod/ice/conc/ice_conc_nh_polstere-100_multi_201611031200.nc
     ftp://osisaf.met.no/prod/ice/edge/ice_edge_nh_polstere-100_multi_201611031200.nc
-*()*
+
 Use conc_edgefilter.py to create a filtered product file from these, as shown in *Usage* below.
 
 ## Requirements
