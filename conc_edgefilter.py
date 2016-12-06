@@ -21,7 +21,7 @@ Using the ice-concentration and -edge OSI SAF product NetCDF files downloaded fr
     ftp://osisaf.met.no/prod/ice/conc
     ftp://osisaf.met.no/prod/ice/edge,
 the filtered sea ice concentration is produced with:
-  $ python ice_conc_nh_polstere-100_multi_201611021200.nc ice_edge_nh_polstere-100_multi_201611021200.nc ice_conc_nh_polstere-100_multi_201611021200.nc
+  $ python conc_edgefilter.py ice_conc_nh_polstere-100_multi_201611021200.nc ice_edge_nh_polstere-100_multi_201611021200.nc ice_conc_nh_polstere-100_multi_201611021200.nc
 where ice_conc_filt_nh_polstere-100_multi_201611021200.nc is the ice concentration input file
       ice_conc_nh_polstere-100_multi_201611021200.nc      is the ice edge input file
       ice_edge_nh_polstere-100_multi_201611021200.nc.     is the ice concentration output file
