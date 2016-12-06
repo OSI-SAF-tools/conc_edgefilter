@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """Ice edge filtered sea ice concentration
 Takes the ice-concentration and -edge OSI SAF products and produces a filtered ice-concentration product, where the ice
 -concentration is set to zero outside of the ice edge.
@@ -52,7 +54,7 @@ def file_check(conc_file, edge_file):
     try:
         assert edge_prod_type == 'edge'
     except AssertionError:
-        raise AssertionError("The filename given in the first argument should contain 'edge'")
+        raise AssertionError("The filename given in the second argument should contain 'edge'")
     try:
         assert conc_hemisphere == edge_hemisphere
     except AssertionError:
@@ -112,6 +114,6 @@ def filter_file(old_conc_file, new_conc_file, water):
 
 if __name__ == '__main__':
     args = docopt(__doc__, version='Ice edge filtered ice concentration v 1.0')
-    file_check(args['<conc_file>'], args['<output_file>'])
+    file_check(args['<conc_file>'], args['<edge_file>'])
     water = water_mask(args['<edge_file>'])
     filter_file(args['<conc_file>'], args['<output_file>'], water)
