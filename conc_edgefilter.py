@@ -66,20 +66,21 @@ def file_check(conc_file, edge_file):
     except AssertionError:
         raise AssertionError('The dates of the input files are not the same')
 
+
 def water_mask(edge_file):
     nc_edge = netCDF4.Dataset(edge_file, 'r')
     ice_edge = nc_edge.variables['ice_edge'][:]
     return ice_edge == 1
 
 
-def new_ds(old_conc_file, new_conc_file):
+def new_nc_file(old_conc_file, new_conc_file):
     new_conc_file_tmp = new_conc_file + '.tmp'
     shutil.copy(old_conc_file, new_conc_file_tmp)
     return netCDF4.Dataset(new_conc_file_tmp, 'a')
 
 
 def filter_file(old_conc_file, new_conc_file, water):
-    with new_ds(old_conc_file, new_conc_file) as ds:
+    with new_nc_file(old_conc_file, new_conc_file) as ds:
 
         ice_conc = ds.variables['ice_conc'][:]
         ice_conc[water & ~ice_conc.mask] = 0.0
@@ -101,6 +102,11 @@ def filter_file(old_conc_file, new_conc_file, water):
             uncertainty.mask = (water | uncertainty.mask)
             ds.variables[variable][:] = uncertainty
             del uncertainty
+
+        ds.comment = "The ice edge product has been used to filter this ice concentration product, " \
+                     "to eliminate noise is open water regions. " \
+                     "The ice concentration has been set to zero were the ice edge " \
+                     "product indicates no ice or very open ice (i.e. where the flag_value is 1)" \
 
         shutil.move(ds.filepath(), ds.filepath().replace('.tmp', ''))
 
