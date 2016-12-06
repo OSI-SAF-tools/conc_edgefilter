@@ -1,8 +1,13 @@
 
-# Ice edge filtered sea ice concentration
+# Ice-Edge-Filtered OSI SAF Sea Ice Concentration
 
 conc_edgefilter.py takes the ice-concentration and -edge OSI SAF products and produces a filtered ice-concentration product, where the ice
 -concentration is set to zero outside of the ice edge.
+
+The latest OSI SAF sea ice concentration and edge products can be downloaded from here:
+
+    ftp://osisaf.met.no/prod/ice/conc
+    ftp://osisaf.met.no/prod/ice/edge
 
 ## Requirements
     * Tested with Python 2.7.11
