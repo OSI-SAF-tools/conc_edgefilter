@@ -16,9 +16,9 @@ The latest OSI SAF sea ice concentration and edge products can be downloaded fro
     * netCDF4
 
 ## Usage
-    $ python conc_edged.py <conc_file> <edge_file> <output_file>
+    $ python conc_edgefilter.py <conc_file> <edge_file> <output_file>
 
     <conc_file>   path to the ice concentration product NetCDF file
     <edge_file>   path to the ice edge product NetCDF file
-    <output_file> path of the new, filtered, ice concentration file, that will be generated
+    <output_file> path of the, new, filtered ice concentration file, that will be generated
 

@@ -3,7 +3,7 @@ Takes the ice-concentration and -edge OSI SAF products and produces a filtered i
 -concentration is set to zero outside of the ice edge.
 
 Usage:
-  conc_edged.py <conc_file> <edge_file> <output_file>
+  conc_edgefilter.py <conc_file> <edge_file> <output_file>
 
 Description:
   <conc_file>   path to the ice concentration product NetCDF file
