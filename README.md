@@ -19,5 +19,5 @@ The latest OSI SAF sea ice concentration and edge products can be downloaded fro
 
     <conc_file>   path to the ice concentration product NetCDF file
     <edge_file>   path to the ice edge product NetCDF file
-    <output_file> path of the new, filtered, ice concentration file
+    <output_file> path of the new, filtered, ice concentration file, that will be generated
 
