@@ -1,0 +1,18 @@
+
+# Ice edge filtered sea ice concentration
+
+conc_edgefilter.py takes the ice-concentration and -edge OSI SAF products and produces a filtered ice-concentration product, where the ice
+-concentration is set to zero outside of the ice edge.
+
+## Requirements
+    * Tested with Python 2.7.11
+    * docopt
+    * netCDF4
+
+## Usage
+    $ python conc_edged.py <conc_file> <edge_file> <output_file>
+
+    <conc_file>   path to the ice concentration product NetCDF file
+    <edge_file>   path to the ice edge product NetCDF file
+    <output_file> path of the new, filtered, ice concentration file
+
