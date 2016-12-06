@@ -15,9 +15,8 @@ For example download (replacing 20161103 with the desired date):
 
     ftp://osisaf.met.no/prod/ice/conc/ice_conc_nh_polstere-100_multi_201611031200.nc
     ftp://osisaf.met.no/prod/ice/edge/ice_edge_nh_polstere-100_multi_201611031200.nc
-Note that the product files are only available for the last 31 days from this location.
+*(Note that the product files are only available for the last 31 days from this location.)*
 Use conc_edgefilter.py to create a filtered product file from these, as shown in *Usage* below.
-
 
 ## Requirements
     * Tested with Python 2.7.11
