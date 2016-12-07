@@ -6,7 +6,8 @@ ice-concentration product. The ice concentration set to zero where the ice-edge 
 very open ice (i.e. where the flag_values variable is 1).
 
 This filter removes *most* of the spurious sea ice, but also removes a significant amount of valid sea ice.
-An analysis [here](docs/Masking+SIC+with+SIEdge.html)
+The filter does not remove ice around the coast.
+# [This notebook](docs/Masking+SIC+with+SIEdge.html) shows an analysis of the ice that is removed by the filter.
 
 
 
