@@ -1,8 +1,8 @@
 
 # Edge-Filtered Sea Ice Concentration
 
-Spurious ice can occur in the OSI sea ice concentration fields due to weather effects and the relatively uncertainty of
-the measurement over open water.
+Spurious ice can occur in the OSI sea ice concentration fields, due to weather effects and the relatively high uncertainty
+of the measurement over open water.
 
 conc_edgefilter.py takes the sea ice-concentration and -edge OSI SAF products and produces a filtered sea
 ice-concentration product. The ice concentration is set to zero where the sea ice edge product indicates no ice or
