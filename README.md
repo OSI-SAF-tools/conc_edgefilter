@@ -1,8 +1,8 @@
 
-# Edge Filtered Sea Ice Concentration
+# Edge-Filtered Sea Ice Concentration
 
 conc_edgefilter.py takes the sea ice-concentration and -edge OSI SAF products and produces a filtered sea
-ice-concentration product. The ice concentration set to zero where the ice-edge product indicates no ice or
+ice-concentration product. The ice concentration set to zero where the sea ice edge product indicates no ice or
 very open ice (i.e. where the flag_values variable is 1).
 
 ### Limitations
