@@ -8,8 +8,8 @@ very open ice (i.e. where the flag_values variable is 1).
 This filter removes *most* of the spurious sea ice.
 
 ### Limitations
-In addition to removing spurious ice, the filter also removes a significant amount of valid sea ice.
-The filter does not remove spurious ice near the coast.
+    * In addition to removing spurious ice, the filter also removes a significant amount of valid sea ice.
+    * The filter does not remove spurious ice near the coast.
 
 ## Requirements
     * Tested with Python 2.7.11
