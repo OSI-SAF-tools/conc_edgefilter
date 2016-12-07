@@ -1,7 +1,7 @@
 
 # Edge-Filtered Sea Ice Concentration
 
-Spurious ice can occur in the OSI sea ice concentration fields, due to weather effects and the relatively high uncertainty
+Spurious ice can occur in the OSI SAF sea ice concentration fields, due to weather effects and the relatively high uncertainty
 of the measurement over open water.
 
 conc_edgefilter.py takes the sea ice-concentration and -edge OSI SAF products and produces a filtered sea
@@ -9,7 +9,7 @@ ice-concentration product. The ice concentration is set to zero where the sea ic
 very open ice (i.e. where the flag_values variable is 1).
 
 ### Limitations
-The filter removes *most* of the spurious sea ice; however it has the following limitations:
+The filter removes *most* of the spurious sea ice; however, it has the following limitations:
 
     * In addition to removing spurious ice, the filter also removes a significant amount of valid sea ice.
     * The filter does not remove spurious ice near the coast.
