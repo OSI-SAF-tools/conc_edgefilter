@@ -5,7 +5,7 @@ Spurious ice can occur in the OSI sea ice concentration fields due to weather ef
 the measurement over open water.
 
 conc_edgefilter.py takes the sea ice-concentration and -edge OSI SAF products and produces a filtered sea
-ice-concentration product. The ice concentration set to zero where the sea ice edge product indicates no ice or
+ice-concentration product. The ice concentration is set to zero where the sea ice edge product indicates no ice or
 very open ice (i.e. where the flag_values variable is 1).
 
 ### Limitations
