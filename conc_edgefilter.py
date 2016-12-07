@@ -26,14 +26,15 @@ where ice_conc_filt_nh_polstere-100_multi_201611021200.nc is the ice concentrati
       ice_conc_nh_polstere-100_multi_201611021200.nc      is the ice edge input file
       ice_edge_nh_polstere-100_multi_201611021200.nc.     is the ice concentration output file
 
-__author__ "John Lavelle"
-__email__ "jol@dmi.dk"
 """
 
 from docopt import docopt
 import shutil
 import netCDF4
 import re
+
+__author__ = "John Lavelle"
+__email__ = "jol@dmi.dk"
 
 
 def parse_filename(filename):
