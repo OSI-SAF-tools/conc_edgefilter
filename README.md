@@ -5,9 +5,9 @@ conc_edgefilter.py takes the sea ice-concentration and -edge OSI SAF products an
 ice-concentration product. The ice concentration set to zero where the ice-edge product indicates no ice or
 very open ice (i.e. where the flag_values variable is 1).
 
-This filter removes *most* of the spurious sea ice.
-
 ### Limitations
+The filter removes *most* of the spurious sea ice; however it has the following limitations:
+
     * In addition to removing spurious ice, the filter also removes a significant amount of valid sea ice.
     * The filter does not remove spurious ice near the coast.
 
