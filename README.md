@@ -11,6 +11,9 @@ This filter removes *most* of the spurious sea ice.
     * In addition to removing spurious ice, the filter also removes a significant amount of valid sea ice.
     * The filter does not remove spurious ice near the coast.
 
+[This notebook](docs/Masking_SIC_with_SIEdge.ipynb) shows an analysis of the ice that is removed by the filter.
+
+
 ## Requirements
     * Tested with Python 2.7.11
     * docopt
